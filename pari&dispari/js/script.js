@@ -13,17 +13,14 @@ console.log(numUser,'numero user')
 const userEvenOrOdd = prompt('scegli pari o dispari')
 console.log(userEvenOrOdd,'predizione user')
 
-// Chiamata della funzione random
-let numRandom = generaNumRandom();
-
 
 // numero random per il pc 
-const numPc = numRandom ;
+const numPc = generaNumRandom(); ;
 console.log(numPc,'num random pc')
 
 // risultato della somma dei umeni di user e pc 
 const result = sumEvenOrOdd(numPc,numUser)
-console.log(result ,'risultato sum')
+console.log(result ,'risultato')
 
 
 // creare condizione che dice che se il risultato della somma e uguale alla predizione dell'utete ha vinto altrimenti a perso 
@@ -48,7 +45,7 @@ if(userEvenOrOdd === result){
     return num1to5;
   }
  
-    //creare funzione dove fa la somma del numero user e del numero random del pc e dice se il risultato e pari o dispari
+    //creare funzione dove fa la somma del numero user e del numero random del pc e dice se il risultato è pari o dispari
     // pc--> numero del pc random
     // user-->numero dell'utente   
   function sumEvenOrOdd(pc,user){
